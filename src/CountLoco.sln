@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountLoco", "CountLoco\CountLoco.csproj", "{BC727F1E-4007-41A1-8F30-8E6F0574DE82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountLocoTests", "CountLocoTests\CountLocoTests.csproj", "{971CD196-5D23-4095-BFD0-0A58D048CE11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC727F1E-4007-41A1-8F30-8E6F0574DE82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC727F1E-4007-41A1-8F30-8E6F0574DE82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC727F1E-4007-41A1-8F30-8E6F0574DE82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC727F1E-4007-41A1-8F30-8E6F0574DE82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971CD196-5D23-4095-BFD0-0A58D048CE11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971CD196-5D23-4095-BFD0-0A58D048CE11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971CD196-5D23-4095-BFD0-0A58D048CE11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971CD196-5D23-4095-BFD0-0A58D048CE11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

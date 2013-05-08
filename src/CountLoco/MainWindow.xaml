@@ -1,0 +1,77 @@
+﻿<Window x:Class="CountLoco.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:countLoco="clr-namespace:CountLoco"
+        mc:Ignorable="d"
+        Title="Countable items"
+        Height="180"
+        Width="350"
+        d:DataContext="{d:DesignInstance countLoco:MainWindow}">
+    <StackPanel HorizontalAlignment="Center"
+                Width="300"
+                Margin="0,10">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="160" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0"
+                       Grid.Column="0"
+                       VerticalAlignment="Center"
+                       Text="Pick a language: " />
+
+            <ComboBox Grid.Column="1"
+                      Text="Hello"
+                      ItemsSource="{Binding Languages, Mode=OneTime}"
+                      SelectionChanged="OnLanguageSelectionChanged"
+                      Margin="5" />
+
+            <TextBlock Grid.Row="1"
+                       Grid.Column="0"
+                       VerticalAlignment="Center"
+                       Text="Enter the number of things: " />
+
+            <!--
+            If you want {ENTER} to advance focus, pick one of the solutions here:
+            http://stackoverflow.com/questions/8203329/moving-to-next-control-on-enter-keypress-in-wpf
+            -->
+            <TextBox Grid.Row="1"
+                     Grid.Column="1"
+                     Background="Beige"
+                     VerticalAlignment="Center"
+                     Height="20"
+                     Text="{Binding Number, Mode=TwoWay}"
+                     Margin="5" />
+
+            <TextBlock Grid.Row="2"
+                       Grid.Column="0"
+                       VerticalAlignment="Center"
+                       Text="Localized string: " />
+
+            <Border Grid.Row="2"
+                    Grid.Column="1"
+                    VerticalAlignment="Center"
+                    BorderThickness="1"
+                    BorderBrush="PapayaWhip"
+                    Margin="5">
+                <TextBlock VerticalAlignment="Center"
+                           Text="{Binding Things}"
+                           Height="20"
+                           Focusable="True"
+                           Background="Azure" />
+            </Border>
+        </Grid>
+
+    </StackPanel>
+</Window>
